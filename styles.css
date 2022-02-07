@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+nav{
+    background: #3899e4;
+    height: 80px;
+    width: 100%;
+
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 7px;
+
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 12px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+   font-size: 30px;
+   color: white; 
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+#check{
+    display: none;
+
+}
+
+.firstsection{
+    height: 93vh;
+
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 50%;
+  margin: auto;
+    height: 80%;
+}
+
+.firsthalf{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.background{
+    background: rgba(36, 35, 35, 0.7) url(img/img4.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.secondhalf{
+    width: 30%;
+
+}
+
+.secondhalf img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+
+}
+
+.text-big{
+    font-size: 40px;
+    text-align: center;
+}
+
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionsubtag{
+    font-family: 'Roboto', sans-serif;
+}
+
+.paras{
+    padding: 0 65px;
+}
+
+
+.section-left{
+  
+    flex-direction: row-reverse;
+}
+
+.thumbnail img{
+    margin-top: 50px;
+}
+
+#contact{
+    background-color: rgb(243, 241, 235);
+    height: 50vh;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    max-width: 600px;
+    margin: 30px auto;   
+}
+
+.form input{
+    width: 100%;
+    border-radius: 6px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin: 15px 0;
+    padding: 3px 3px;
+}
+
+
+
+.btn-submit {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid rgb(59, 57, 57);
+    border-radius: 8px;
+    background: none;
+    color: rgb(44, 42, 42);
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+#feedback-text{
+    width: 100%;
+    border-radius: 8px;
+    
+}
+
+.text-footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1140px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0;
+    }
+}
+@media (max-width: 952px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #679acc;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s ease-out;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+}
